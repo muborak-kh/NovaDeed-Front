@@ -1,0 +1,219 @@
+.build-page {
+    padding: 80px 0;
+    background-color: #F8F9FB;
+}
+
+.build-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/build-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    border-radius: 24px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.build-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.build-hero-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.build-hero-search {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.search-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    cursor: pointer;
+    flex: 1;
+    min-width: 200px;
+    border: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #10192C;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%23667085' stroke-width='1.67' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+}
+
+.filter-item:focus {
+    outline: none;
+}
+
+.btn-map,
+.btn-search {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    padding: 16px 24px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-map {
+    background: #FFFFFF;
+    color: #10192C;
+}
+
+.btn-search {
+    background: #3370FF;
+    color: #FFFFFF;
+}
+
+.btn-map:hover {
+    background: #F5F5F5;
+}
+
+.btn-search:hover {
+    background: #2860E6;
+}
+
+.search-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #10192C;
+    background: #FFFFFF;
+    padding: 12px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background: #F5F5F5;
+}
+
+.build-projects {
+    padding: 100px 0;
+}
+
+.build-projects-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.build-projects-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.21;
+    color: #10192C;
+    margin: 0;
+}
+
+.build-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.btn-show-more {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    color: #10192C;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.btn-show-more:hover {
+    background: #F5F5F5;
+}
+
+@media (max-width: 1200px) {
+    .build-hero {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .build-hero-title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .build-hero {
+        padding: 40px 0;
+    }
+
+    .build-hero-title {
+        font-size: 36px;
+    }
+
+    .filter-item {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .build-hero-title {
+        font-size: 32px;
+    }
+
+    .filter-item {
+        min-width: 100%;
+    }
+
+    .btn-map,
+    .btn-search {
+        width: 100%;
+    }
+}

@@ -1,0 +1,204 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12.5px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.26;
+    color: #10192C;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #10192C;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3370FF;
+}
+
+.header-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.language-selector span {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    color: #10192C;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25em;
+    letter-spacing: -0.015em;
+    color: #10192C;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25em;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    background: #3370FF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    opacity: 0.8;
+}
+
+.btn-register:hover {
+    background: #2860E0;
+}
+
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.mobile-menu-button span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #10192C;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 1650px) {
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .nav {
+        gap: 1.5rem;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .nav {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        padding: 0.75rem;
+    }
+
+    .logo-icon {
+        height: 32px;
+    }
+}

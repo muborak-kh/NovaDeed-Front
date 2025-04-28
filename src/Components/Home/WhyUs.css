@@ -1,0 +1,142 @@
+.why-us {
+    padding: 80px 0;
+    background-color: #F8F9FB;
+}
+
+.why-us-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.why-us-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.21;
+    color: #10192C;
+    margin: 0;
+    text-align: left;
+}
+
+.why-us-cards {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.why-us-card {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.card-label {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.21;
+    color: rgba(16, 25, 44, 0.5);
+    text-align: left;
+}
+
+.card-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.21;
+    color: #10192C;
+    margin: 0;
+    text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .why-us-container {
+        padding: 0 40px;
+    }
+
+    .why-us-title {
+        font-size: 40px;
+    }
+
+    .card-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-us {
+        padding: 60px 0;
+    }
+
+    .why-us-container {
+        padding: 0 24px;
+    }
+
+    .why-us-title {
+        font-size: 36px;
+    }
+
+    .card-text {
+        font-size: 28px;
+    }
+
+    .why-us-card {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us-cards {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .why-us-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .card-label {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .why-us {
+        padding: 40px 0;
+    }
+
+    .why-us-container {
+        padding: 0 16px;
+    }
+
+    .why-us-title {
+        font-size: 28px;
+    }
+
+    .why-us-card {
+        padding: 24px;
+    }
+
+    .card-label {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+}
